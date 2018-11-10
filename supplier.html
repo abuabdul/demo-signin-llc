@@ -105,7 +105,7 @@
     <!-- END SIDEBAR-->
     <div class="content-wrapper">
         <!-- START PAGE CONTENT-->
-        <div class="page-heading">
+       <!-- <div class="page-heading">
             <h1 class="page-title">Supplier Form</h1>
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
@@ -113,7 +113,7 @@
                 </li>
                 <li class="breadcrumb-item">Supplier Form</li>
             </ol>
-        </div>
+        </div>-->
         <div class="page-content fade-in-up">
             <div class="ibox">
                 <div class="ibox-head">
@@ -126,25 +126,23 @@
                 <div class="ibox-body">
                     <form class="form-horizontal" id="form-sample-1" method="post" novalidate="novalidate">
                         <div class="form-group row">
-                            <div class="col-sm-4">
+                            <div class="col">
                                 <label>Supplier Name</label>
                                 <input class="form-control" type="text" name="name"/>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col">
                                 <label>Invoice No</label>
                                 <input class="form-control" type="text" name="name"/>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col">
                                 <label>Reference No</label>
                                 <input class="form-control" type="text" name="name"/>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-sm-4">
+							<div class="col">
                                 <label>Address</label>
-                                <textarea class="form-control" type="text" name="name"></textarea>
+                                <textarea class="form-control" type="text" name="name" rows="1"></textarea>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col">
                                 <label>Invoice Date</label>
                                 <div class="form-group" id="date_1">
                                     <div class="input-group date">
@@ -153,24 +151,24 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-3">
                                 <label>Cheque Number</label>
                                 <input class="form-control" type="text" name="name"/>
                             </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-sm-4">
+							 <div class="col-sm-3">
                                 <label>TRN</label>
                                 <input class="form-control" type="text" name="name"/>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-sm-3">
                                 <label>Mode of Payment</label>
                                 <select class="form-control">
                                     <option>Online</option>
                                     <option>By Cash</option>
                                 </select>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-sm-3">
                                 <label>PDC</label>
                                 <div class="form-group" id="date_2">
                                     <div class="input-group date">
@@ -233,35 +231,46 @@
                                         <label>Current Price(AED)</label>
                                         <input class="form-control" type="text" name="name">
                                     </div>
-                                    <div class="col-sm-2">
+                                    <div class="col-sm-1">
                                         <label></label>
                                         <button class="btn btn-danger form-control" onclick="javascript:showAlert()" type="submit">New</button>
                                     </div>
-                                    <div class="col-sm-2">
+                                    <div class="col-sm-1">
                                         <label></label>
                                         <button class="btn btn-danger form-control" type="button">Delete</button>
                                     </div>
-                                    <div class="col-sm-2">
+                                    <div class="col-sm-1">
                                         <label></label>
                                         <button class="btn btn-danger form-control" type="reset">Clear</button>
                                     </div>
+									<div class="col-sm-3">
+										<label></label>
+										<textarea class="form-control" type="text" name="name" rows="1"></textarea>
+									</div>
                                 </div>
                             </div>
                         </div>
                         <div class="form-group row">
-                            <div class="col-sm-12">
-                                <textarea class="form-control" type="text" name="name" rows="6"></textarea>
-                            </div>
-                        </div>
-                        <div class="form-inline">
-                            <label>Discount</label>&nbsp;&nbsp;
-                            <input class="form-control mb-2 mr-sm-2 mb-sm-0" type="number" name="name">
-                            <label>VAT</label>&nbsp;&nbsp;
-                            <input class="form-control mb-2 mr-sm-2 mb-sm-0" type="number" name="name">
-                            <label>Total</label>&nbsp;&nbsp;
-                            <input class="form-control mb-2 mr-sm-2 mb-sm-0" type="number" name="name">
-                            <button class="btn btn-danger" type="submit">Save</button>&nbsp;&nbsp;
-                            <button class="btn btn-danger" type="button">Close</button>
+							<div class="col-sm-4">
+								<label>Discount</label>
+								<input class="form-control mb-2 mr-sm-2 mb-sm-0" type="number" name="name">
+							</div>
+							<div class="col-sm-3">
+								<label>VAT</label>&nbsp;&nbsp;
+								<input class="form-control mb-2 mr-sm-2 mb-sm-0" type="number" name="name">
+							</div>
+							<div class="col-sm-3">
+								<label>Total</label>&nbsp;&nbsp;
+								<input class="form-control mb-2 mr-sm-2 mb-sm-0" type="number" name="name">
+							</div>
+							<div class="col-sm-1">
+								<label></label>
+								<button class="btn btn-danger form-control" type="submit">Save</button>
+							</div>
+							<div class="col-sm-1">
+								<label></label>
+								<button class="btn btn-danger form-control" type="button">Close</button>
+							</div>
                         </div>
                     </form>
                 </div>
